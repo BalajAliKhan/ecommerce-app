@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce - Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="header">
+    <button id="hamburger" class="ham" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="logo">
+      <a href="index.html"><img src="assets/Layout/Brand/logo-colored.png" alt="logo"></a>
+    </div>
+    <form class="search_bar" role="search">
+      <input class="search" type="search" placeholder="Search">
+      <select class="category">
+        <option>All Category</option>
+        <option>Clothing</option>
+        <option>Tech Devices</option>
+        <option>Home Interior</option>
+      </select>
+      <button class="search_btn" type="submit">Search</button>
+    </form>
+    <div class="head-icons">
+      <a href="#" class="icon"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-envelope"></i><span>Message</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-box"></i><span>Orders</span></a>
+      <a href="cart.html" class="icon"><i class="fa-solid fa-cart-shopping"></i><span>My Cart</span></a>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+  <button id="drawer-close" class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+  <ul>
+    <li><a href="list_view.html">All category</a></li>
+    <li><a href="#">Hot offers</a></li>
+    <li><a href="#">Gift boxes</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</nav>
+
+<div class="main-nav">
+  <div class="main-nav-inner">
+    <div class="nav-left">
+      <button class="hamburger">
+        <a href="list_view.html"><i class="fas fa-bars"></i><span> All category</span></a>
+      </button>
+      <ul class="nav-links">
+        <li><a href="list_view.html">Hot offers</a></li>
+        <li><a href="list_view.html">Gift boxes</a></li>
+        <li><a href="list_view.html">Projects</a></li>
+        <li><a href="list_view.html">Menu item</a></li>
+        <li>
+          <select>
+            <option>Help</option>
+            <option>Help Center</option>
+            <option>Contact Us</option>
+            <option>How to Buy</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <select>
+        <option>English, USD</option>
+        <option>Urdu, PKR</option>
+      </select>
+      <div class="ship-to" id="shipToDropdown">
+        <span>Ship To</span>
+        <img src="assets/Layout1/Image/flags/us.png" alt="US" class="flag-icon">
+        <i class="fa-solid fa-chevron-down" style="font-size:10px"></i>
+        <div class="dropdown-content" id="shipDropdown">
+          <a href="#" data-flag="us"><img src="assets/Layout1/Image/flags/us.png"> United States</a>
+          <a href="#" data-flag="de"><img src="assets/Layout1/Image/flags/de.png"> Germany</a>
+          <a href="#" data-flag="ae"><img src="assets/Layout1/Image/flags/ae.png"> UAE</a>
+          <a href="#" data-flag="gb"><img src="assets/Layout1/Image/flags/gb.png"> United Kingdom</a>
+          <a href="#" data-flag="cn"><img src="assets/Layout1/Image/flags/cn.png"> China</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="product-detail-container">
+  <div class="breadcrumb">Home &nbsp;&gt;&nbsp; Electronics &nbsp;&gt;&nbsp; Smart Watch</div>
+
+  <div class="detail-layout">
+    <div class="product-gallery">
+      <div class="main-image">
+        <img src="assets/Image/tech/tech-8.png" alt="Smart Watch" id="mainProductImg">
+      </div>
+      <div class="thumbnails">
+        <div class="thumbnail active"><img src="assets/Image/tech/tech-8.png" alt=""></div>
+        <div class="thumbnail"><img src="assets/Image/tech/tech-6.png" alt=""></div>
+        <div class="thumbnail"><img src="assets/Image/tech/tech-7.png" alt=""></div>
+        <div class="thumbnail"><img src="assets/Image/tech/tech-9.png" alt=""></div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <div class="stock-status"><i class="fa-solid fa-circle" style="font-size:8px;color:#198754"></i> In stock</div>
+      <h1 class="product-title">Smart Watch Series 7 - Premium Edition with Heart Rate Monitor</h1>
+      <div class="product-meta">
+        <span class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> (32 reviews)</span>
+        <span><i class="fa-regular fa-eye"></i> 2.5k sold</span>
+      </div>
+
+      <div class="pricing-tiers">
+        <div class="tier"><div class="tier-price">$99.50</div><div class="tier-qty">1-9 pieces</div></div>
+        <div class="tier"><div class="tier-price">$94.50</div><div class="tier-qty">10-49 pieces</div></div>
+        <div class="tier"><div class="tier-price">$89.50</div><div class="tier-qty">50+ pieces</div></div>
+      </div>
+
+      <div class="details-list">
+        <span class="details-label">Type:</span><span class="details-value">Smart Watch</span>
+        <span class="details-label">Brand:</span><span class="details-value">TechPro</span>
+        <span class="details-label">Color:</span><span class="details-value">Black, Silver, Blue</span>
+        <span class="details-label">Material:</span><span class="details-value">Silicone Strap, Glass Display</span>
+        <span class="details-label">Battery:</span><span class="details-value">400mAh, 7 days standby</span>
+      </div>
+    </div>
+
+    <div class="supplier-card">
+      <div class="supplier-header">
+        <div class="supplier-avatar">T</div>
+        <div class="supplier-name-block">
+          <div class="title">Supplier</div>
+          <div class="name">TechPro Store</div>
+        </div>
+      </div>
+      <ul class="supplier-features">
+        <li><i class="fa-solid fa-check-circle" style="color:#198754"></i> Verified seller</li>
+        <li><i class="fa-solid fa-truck" style="color:#0d6efd"></i> Fast delivery</li>
+        <li><i class="fa-solid fa-rotate-left" style="color:#ff9017"></i> 30-day returns</li>
+      </ul>
+      <button class="btn btn-primary" id="addToCartBtn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+      <button class="btn btn-outline"><i class="fa-regular fa-heart"></i> Save for later</button>
+    </div>
+  </div>
+
+  <div class="detail-bottom">
+    <div class="detail-main-content">
+      <div class="tabs">
+        <div class="tab active" data-tab="description">Description</div>
+        <div class="tab" data-tab="specs">Specifications</div>
+        <div class="tab" data-tab="reviews">Reviews</div>
+      </div>
+      <div class="tab-content" id="tabContent">
+        <div id="tab-description" class="tab-panel">
+          <p class="description-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="description-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div id="tab-specs" class="tab-panel" style="display:none">
+          <table class="specs-table">
+            <tr><td>Display Size</td><td>1.75 inches</td></tr>
+            <tr><td>Resolution</td><td>390 x 450 pixels</td></tr>
+            <tr><td>Processor</td><td>Dual-core 1.2GHz</td></tr>
+            <tr><td>RAM</td><td>2GB</td></tr>
+            <tr><td>Storage</td><td>16GB</td></tr>
+            <tr><td>Battery Life</td><td>Up to 7 days</td></tr>
+            <tr><td>Water Resistance</td><td>IP68</td></tr>
+            <tr><td>Connectivity</td><td>Bluetooth 5.0, Wi-Fi</td></tr>
+          </table>
+        </div>
+        <div id="tab-reviews" class="tab-panel" style="display:none">
+          <p class="description-text">No reviews yet. Be the first to review this product!</p>
+        </div>
+      </div>
+    </div>
+    <div class="detail-sidebar">
+      <h4>You may also like</h4>
+      <div class="rec-list">
+        <div class="rec-item">
+          <div class="rec-img"><img src="assets/Image/tech/tech-6.png" alt=""></div>
+          <div><div class="rec-title">Wireless Headphones Pro</div><div class="rec-price">$59.99</div></div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-img"><img src="assets/Image/tech/tech-5.png" alt=""></div>
+          <div><div class="rec-title">Laptop Stand Adjustable</div><div class="rec-price">$34.99</div></div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-img"><img src="assets/Image/tech/tech-9.png" alt=""></div>
+          <div><div class="rec-title">USB-C Hub 7-in-1</div><div class="rec-price">$29.99</div></div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-img"><img src="assets/Image/tech/tech-3.png" alt=""></div>
+          <div><div class="rec-title">Bluetooth Speaker Mini</div><div class="rec-price">$24.99</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="related-products">
+    <h3 class="related-title">Related products</h3>
+    <div class="related-grid">
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-1.png" alt=""></div>
+        <p class="related-item-name">Smart Watch Pro</p>
+        <p class="related-item-price">$99.50</p>
+      </div>
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-2.png" alt=""></div>
+        <p class="related-item-name">Fitness Tracker Band</p>
+        <p class="related-item-price">$49.50</p>
+      </div>
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-3.png" alt=""></div>
+        <p class="related-item-name">Digital Camera 4K</p>
+        <p class="related-item-price">$299.00</p>
+      </div>
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-4.png" alt=""></div>
+        <p class="related-item-name">Wireless Earbuds</p>
+        <p class="related-item-price">$79.99</p>
+      </div>
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-5.png" alt=""></div>
+        <p class="related-item-name">Laptop Bag 15.6"</p>
+        <p class="related-item-price">$45.00</p>
+      </div>
+      <div class="related-item">
+        <div class="related-img-bg"><img src="assets/Image/tech/tech-6.png" alt=""></div>
+        <p class="related-item-name">Gaming Headset</p>
+        <p class="related-item-price">$89.99</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo-banner">
+    <div>
+      <h2 class="promo-main-text">Super discount on more than 100 USD</h2>
+      <p class="promo-sub-text">Have you ever finally just write dummy info</p>
+    </div>
+    <button class="promo-shop-btn">Shop now</button>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand"><img src="assets/Layout/Brand/logo-colored.png" alt=""></div>
+      <p>Best information about the company <br> goes here but now lorem ipsum is</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <div>
+      <h6>About</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Partnership</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Information</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div>
+      <h6>For User</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="apps">
+      <h6>Get app</h6>
+      <img src="assets/Layout/Brand/logo-colored.png" alt="App Store" style="height:40px;margin-bottom:8px">
+      <img src="assets/Layout/Brand/logo-colored.png" alt="Google Play" style="height:40px">
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="bottom-inner">
+    <span>&copy; 2023 Ecommerce.</span>
+    <span>English &blacktriangle;</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

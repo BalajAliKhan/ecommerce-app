@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce - Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="header">
+    <button id="hamburger" class="ham" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="logo">
+      <a href="index.html"><img src="assets/Layout/Brand/logo-colored.png" alt="logo"></a>
+    </div>
+    <form class="search_bar" role="search">
+      <input class="search" type="search" placeholder="Search">
+      <select class="category">
+        <option>All Category</option>
+        <option>Clothing</option>
+        <option>Tech Devices</option>
+        <option>Home Interior</option>
+      </select>
+      <button class="search_btn" type="submit">Search</button>
+    </form>
+    <div class="head-icons">
+      <a href="#" class="icon"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-envelope"></i><span>Message</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-box"></i><span>Orders</span></a>
+      <a href="cart.html" class="icon"><i class="fa-solid fa-cart-shopping"></i><span>My Cart</span></a>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+  <button id="drawer-close" class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+  <ul>
+    <li><a href="list_view.html">All category</a></li>
+    <li><a href="#">Hot offers</a></li>
+    <li><a href="#">Gift boxes</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</nav>
+
+<div class="main-nav">
+  <div class="main-nav-inner">
+    <div class="nav-left">
+      <button class="hamburger">
+        <a href="list_view.html"><i class="fas fa-bars"></i><span> All category</span></a>
+      </button>
+      <ul class="nav-links">
+        <li><a href="list_view.html">Hot offers</a></li>
+        <li><a href="list_view.html">Gift boxes</a></li>
+        <li><a href="list_view.html">Projects</a></li>
+        <li><a href="list_view.html">Menu item</a></li>
+        <li>
+          <select>
+            <option>Help</option>
+            <option>Help Center</option>
+            <option>Contact Us</option>
+            <option>How to Buy</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <select>
+        <option>English, USD</option>
+        <option>Urdu, PKR</option>
+      </select>
+      <div class="ship-to" id="shipToDropdown">
+        <span>Ship To</span>
+        <img src="assets/Layout1/Image/flags/us.png" alt="US" class="flag-icon">
+        <i class="fa-solid fa-chevron-down" style="font-size:10px"></i>
+        <div class="dropdown-content" id="shipDropdown">
+          <a href="#" data-flag="us"><img src="assets/Layout1/Image/flags/us.png"> United States</a>
+          <a href="#" data-flag="de"><img src="assets/Layout1/Image/flags/de.png"> Germany</a>
+          <a href="#" data-flag="ae"><img src="assets/Layout1/Image/flags/ae.png"> UAE</a>
+          <a href="#" data-flag="gb"><img src="assets/Layout1/Image/flags/gb.png"> United Kingdom</a>
+          <a href="#" data-flag="cn"><img src="assets/Layout1/Image/flags/cn.png"> China</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="listing-container">
+  <div class="breadcrumb">Home &nbsp;&gt;&nbsp; Cloth & Wear</div>
+
+  <div class="listing-layout">
+    <aside class="sidebar">
+      <div class="filter-group">
+        <h3>Category</h3>
+        <ul>
+          <li>Clothing</li>
+          <li>Shoes</li>
+          <li>Accessories</li>
+          <li>Watches</li>
+          <li>Bags</li>
+        </ul>
+      </div>
+
+      <div class="filter-group">
+        <h3>Brands</h3>
+        <label><input type="checkbox"> Nike</label>
+        <label><input type="checkbox"> Adidas</label>
+        <label><input type="checkbox"> Puma</label>
+        <label><input type="checkbox"> Gucci</label>
+        <span class="see-all">See all</span>
+      </div>
+
+      <div class="filter-group">
+        <h3>Price range</h3>
+        <div class="price-inputs">
+          <input type="number" placeholder="Min">
+          <input type="number" placeholder="Max">
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+      <div class="filter-group">
+        <h3>Rating</h3>
+        <label><input type="radio" name="rating"> 5 stars</label>
+        <label><input type="radio" name="rating"> 4 stars & up</label>
+        <label><input type="radio" name="rating"> 3 stars & up</label>
+        <label><input type="radio" name="rating"> 2 stars & up</label>
+      </div>
+    </aside>
+
+    <div class="listing-content">
+      <div class="top-bar">
+        <span class="items-count">12,911 items found</span>
+        <div style="display:flex;align-items:center;gap:12px">
+          <select class="sort-select">
+            <option>Sort by: Most Popular</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+          <div class="view-switchers">
+            <button id="gridViewBtn" class="active"><i class="fa-solid fa-grid-2"></i></button>
+            <button id="listViewBtn"><i class="fa-solid fa-list"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span>All <i class="fa-solid fa-xmark"></i></span>
+        <span>Men's fashion <i class="fa-solid fa-xmark"></i></span>
+        <span>Winter collection <i class="fa-solid fa-xmark"></i></span>
+        <span class="clear-all">Clear all</span>
+      </div>
+
+      <div class="grid-view" id="productGrid"></div>
+
+      <div class="pagination-bar">
+        <span class="pagination-info">Showing 1-9 of 12,911 results</span>
+        <div class="pagination-buttons">
+          <button>&lt;</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="newsletter">
+  <div class="newsletter-inner">
+    <h3>Subscribe on our newsletter</h3>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand"><img src="assets/Layout/Brand/logo-colored.png" alt=""></div>
+      <p>Best information about the company <br> goes here but now lorem ipsum is</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <div>
+      <h6>About</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Partnership</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Information</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div>
+      <h6>For User</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="apps">
+      <h6>Get app</h6>
+      <img src="assets/Layout/Brand/logo-colored.png" alt="App Store" style="height:40px;margin-bottom:8px">
+      <img src="assets/Layout/Brand/logo-colored.png" alt="Google Play" style="height:40px">
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="bottom-inner">
+    <span>&copy; 2023 Ecommerce.</span>
+    <span>English &blacktriangle;</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

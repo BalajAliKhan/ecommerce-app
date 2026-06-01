@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce - My Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div id="header">
+    <button id="hamburger" class="ham" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="logo">
+      <a href="index.html"><img src="assets/Layout/Brand/logo-colored.png" alt="logo"></a>
+    </div>
+    <div class="head-icons">
+      <a href="#" class="icon"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-envelope"></i><span>Message</span></a>
+      <a href="#" class="icon"><i class="fa-solid fa-box"></i><span>Orders</span></a>
+      <a href="cart.html" class="icon"><i class="fa-solid fa-cart-shopping"></i><span>My Cart</span></a>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+  <button id="drawer-close" class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+  <ul>
+    <li><a href="list_view.html">All category</a></li>
+    <li><a href="#">Hot offers</a></li>
+    <li><a href="#">Gift boxes</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</nav>
+
+<div class="cart-page">
+  <h2 class="page-title" id="cartTitle">My cart (0)</h2>
+
+  <div class="cart-grid">
+    <div class="cart-main">
+      <div class="cart-card" id="dynamic-cart-items">
+        <p style="text-align:center;padding:40px 0;color:#6b7280">Your cart is empty!</p>
+      </div>
+    </div>
+
+    <div class="cart-sidebar">
+      <div class="coupon-section">
+        <label>Have a coupon?</label>
+        <div class="coupon-input">
+          <input type="text" placeholder="Add coupon">
+          <button class="btn-apply">Apply</button>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="subtotal-price">$0.00</span>
+        </div>
+        <div class="summary-row" style="color:#fa3434">
+          <span>Discount:</span>
+          <span>- $60.00</span>
+        </div>
+        <div class="summary-row" style="color:#00b517">
+          <span>Tax:</span>
+          <span>+ $14.00</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total:</span>
+          <span id="total-price">$0.00</span>
+        </div>
+        <button class="btn-checkout">Checkout</button>
+        <div class="pay-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="saved-later-section">
+    <h3>Saved for later</h3>
+    <div class="saved-grid">
+      <div class="saved-card">
+        <div class="img-box"><img src="assets/Image/tech/tech-3.png" alt=""></div>
+        <div class="saved-price">$99.50</div>
+        <p class="saved-name">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="btn-move-cart"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+      </div>
+      <div class="saved-card">
+        <div class="img-box"><img src="assets/Image/tech/tech-8.png" alt=""></div>
+        <div class="saved-price">$99.50</div>
+        <p class="saved-name">Smart Watch Series 7</p>
+        <button class="btn-move-cart"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+      </div>
+      <div class="saved-card">
+        <div class="img-box"><img src="assets/Image/tech/tech-7.png" alt=""></div>
+        <div class="saved-price">$49.99</div>
+        <p class="saved-name">Wireless Headphones Pro</p>
+        <button class="btn-move-cart"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+      </div>
+      <div class="saved-card">
+        <div class="img-box"><img src="assets/Image/tech/tech-4.png" alt=""></div>
+        <div class="saved-price">$79.99</div>
+        <p class="saved-name">Digital Camera 4K Ultra HD</p>
+        <button class="btn-move-cart"><i class="fa fa-shopping-cart"></i> Move to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="promo-banner">
+    <div>
+      <h2 class="promo-main-text">Super discount on more than 100 USD</h2>
+      <p class="promo-sub-text">Have you ever finally just write dummy info</p>
+    </div>
+    <button class="promo-shop-btn">Shop now</button>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="brand"><img src="assets/Layout/Brand/logo-colored.png" alt=""></div>
+      <p>Best information about the company <br> goes here but now lorem ipsum is</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+    <div>
+      <h6>About</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Partnership</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Find store</li>
+        <li>Categories</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Information</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div>
+      <h6>For User</h6>
+      <ul>
+        <li>Help Center</li>
+        <li>Money Refund</li>
+        <li>Shipping</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="apps">
+      <h6>Get app</h6>
+      <img src="assets/Layout/Brand/logo-colored.png" alt="App Store" style="height:40px;margin-bottom:8px">
+      <img src="assets/Layout/Brand/logo-colored.png" alt="Google Play" style="height:40px">
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="bottom-inner">
+    <span>&copy; 2023 Ecommerce.</span>
+    <span>English &blacktriangle;</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
