@@ -102,7 +102,7 @@ All interactive elements include `:focus-visible` outlines for keyboard accessib
 No build tools or package managers required. Open any `.html` file directly in a browser:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/BalajAliKhan/ecommerce-app.git
 cd ecommerce-frontend-design
 open index.html
 ```
