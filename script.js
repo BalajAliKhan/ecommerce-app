@@ -99,10 +99,10 @@ var listingProducts = [
   var html = '';
   for (var i = 0; i < recommendedProducts.length; i++) {
     var item = recommendedProducts[i];
-    html += '<div class="product-card1">' +
+    html += '<a href="product.html" class="product-card1" style="text-decoration:none;color:inherit">' +
       '<div class="img-box"><img src="' + item.img + '" alt="product"></div>' +
       '<div><p class="price">' + item.price + '</p><p class="desc">' + item.desc + '</p></div>' +
-      '</div>';
+      '</a>';
   }
   container.innerHTML = html;
 })();
@@ -120,15 +120,15 @@ var listingProducts = [
       for (var s = 0; s < 5; s++) {
         stars += s < p.rating ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>';
       }
-      html += '<div class="product-card">' +
-        '<button class="wishlist"><i class="fa-regular fa-heart"></i></button>' +
+      html += '<a href="product.html" class="product-card" style="text-decoration:none;color:inherit">' +
+        '<button class="wishlist" onclick="event.stopPropagation();"><i class="fa-regular fa-heart"></i></button>' +
         '<img src="' + p.img + '" alt="" class="product-img">' +
         '<div class="details">' +
         '<p class="price">' + p.price + (p.oldPrice ? ' <span class="old-price">' + p.oldPrice + '</span>' : '') + '</p>' +
         '<p class="title">' + p.title + '</p>' +
         '<div class="rating">' + stars + '</div>' +
         '<p class="description">' + p.desc + '</p>' +
-        '</div></div>';
+        '</div></a>';
     }
     grid.innerHTML = html;
   }
@@ -242,6 +242,21 @@ var listingProducts = [
   var cartContainer = document.getElementById('dynamic-cart-items');
   if (!cartContainer) return;
 
+  var defaultCartItems = [
+    { id: "d1", name: "Smart Watch Series 7 - Premium Edition", price: 99.50, image: "assets/Image/tech/tech-8.png", quantity: 1, seller: "TechPro Store" },
+    { id: "d2", name: "GoPro HERO6 4K Action Camera - Black", price: 99.50, image: "assets/Image/tech/tech-3.png", quantity: 2, seller: "DigitalWorld" },
+    { id: "d3", name: "Wireless Headphones Pro - Noise Cancelling", price: 49.99, image: "assets/Image/tech/tech-7.png", quantity: 1, seller: "AudioTech" }
+  ];
+
+  function initCart() {
+    var cart = JSON.parse(localStorage.getItem('myCart')) || [];
+    if (cart.length === 0) {
+      localStorage.setItem('myCart', JSON.stringify(defaultCartItems));
+    }
+  }
+
+  initCart();
+
   function displayCart() {
     var cart = JSON.parse(localStorage.getItem('myCart')) || [];
     var subtotal = 0;
@@ -320,7 +335,7 @@ var listingProducts = [
   };
 
   window.clearAll = function() {
-    localStorage.removeItem('myCart');
+    localStorage.setItem('myCart', JSON.stringify(defaultCartItems));
     displayCart();
   };
 
