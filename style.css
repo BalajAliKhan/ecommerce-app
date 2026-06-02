@@ -468,6 +468,7 @@ header {
 }
 
 .source-btn {
+  display: inline-block;
   background: #fff;
   border: none;
   padding: 8px 16px;
@@ -475,6 +476,8 @@ header {
   margin-top: 16px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  color: #1c1c1c;
   transition: all 0.3s;
 }
 
@@ -668,6 +671,12 @@ header {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.service-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
 }
 
 .service-icon {
@@ -1863,8 +1872,7 @@ header {
 }
 
 @media (max-width: 1280px) {
-  #header, .hero_section, .newsletter-inner, .cart-page,
-  .listing-container, .product-detail-container, .footer {
+  #header, .hero_section, .newsletter-inner, .footer {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -1875,30 +1883,30 @@ header {
 }
 
 @media (max-width: 1024px) {
-  #header, .hero_section, .newsletter-inner, .cart-page,
-  .listing-container, .product-detail-container, .footer {
+  #header, .hero_section, .newsletter-inner, .footer {
     padding-left: 32px;
     padding-right: 32px;
   }
   .search_bar { display: none; }
   .ham { display: block; }
-  .main-nav .hamburger, .main-nav .nav-links { display: none; }
-  .nav-right select { display: none; }
+  .main-nav .hamburger, .main-nav .nav-links, .nav-right select { display: none; }
   .section1 { flex-direction: column; }
   .image_sec { min-height: 260px; }
-  .widget-container { flex-direction: row; }
+  .section1 .type_list { display: none; }
+  .widget-container { flex-direction: row; justify-content: center; flex-wrap: wrap; }
+  .widget-container .card { width: calc(50% - 8px); }
   .items-container-flex .flex-item { width: calc(33.33% - 12px); }
   .grid-container .product-card1 { width: calc(33.33% - 12px); }
-  .listing-layout { flex-direction: column; }
-  .sidebar { width: 100%; }
-  .cart-grid { flex-direction: column; }
-  .cart-sidebar { width: 100%; }
-  .detail-layout { flex-direction: column; }
-  .supplier-card { width: 100%; }
-  .detail-bottom { flex-direction: column; }
-  .detail-sidebar { width: 100%; }
   .footer-grid { grid-template-columns: repeat(3, 1fr); }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .suppliers-grid { grid-template-columns: repeat(5, 1fr); }
+  .section-wrapper .banner-side { padding: 20px; min-height: 100px; }
+  .section-wrapper .banner-side h3 { font-size: 18px; }
+  .inquiry-form-card { max-width: 100%; }
+  .deals-flex-container { gap: 12px; }
+  .deal-item { width: calc(20% - 12px); }
 }
+
+
 
 
